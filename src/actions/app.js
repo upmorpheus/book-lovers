@@ -2,7 +2,7 @@ import {
     FAILURE,
     GET_LOGIN_REQUEST,
     GET_LOGIN_SUCCESS,
-} from './index'
+} from './index';
 
 export function getLoginRequest(id) {
     return {

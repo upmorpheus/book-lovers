@@ -2,14 +2,14 @@ import {
     GET_USERS_REQUEST,
     GET_USERS_SUCCESS,
     GET_USERS_FAILURE
-  } from "../actions"
+  } from "../actions";
   
-  const initialState = {
+const initialState = {
     users: [],
     loading: false,
     error: null,
-  }
-  
+}
+
 export default function users(state = initialState, action) {
   switch (action.type) {
       case GET_USERS_REQUEST:

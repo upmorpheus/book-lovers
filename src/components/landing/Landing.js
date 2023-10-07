@@ -17,7 +17,7 @@ const Landing = () => {
                 <img className="d-block w-100" src={Slide3} alt="slide 1" />
             </Carousel.Item>
         </Carousel>
-    )
+    );
 }
 
 export default Landing;
