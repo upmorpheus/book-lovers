@@ -1,52 +1,52 @@
 import React from "react";
-import './Landing.scss';
-import Carousel from 'react-bootstrap/Carousel';
-import Slide1 from '../../assets/images/angular.jpg';
-import Slide2 from '../../assets/images/react.jpg';
-import Slide3 from '../../assets/images/vue.jpg';
+import Slide1 from '../../assets/images/banner-1.png';
+import Slide2 from '../../assets/images/banner-2.png';
+import Slide3 from '../../assets/images/banner-3.png';
 
 const Landing = () => {
     return (
-        <Carousel fade className="landing">
-            <Carousel.Item>
-                <img className="d-block w-100" src={Slide1} alt="slide 1" />
-                <div class="kode-caption-2">
-                	<h5>Are you searching a book...?</h5>
-                	<h2>Biggest Library</h2>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor emque laudantium, totam rem aperiam.ipsam voluptatem.</p>
-                    <div class="caption-btns">
-                    	<a href="#">See More</a>
-                        <a href="#">Buy Now</a>
-                    </div>
-                </div>
-            </Carousel.Item>
-
-            <Carousel.Item>
-                <img className="d-block w-100" src={Slide2} alt="slide 1" />
-                <div class="kode-caption-2">
-                	<h5>Are you searching a book...?</h5>
-                	<h2>Biggest Library</h2>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor emque laudantium, totam rem aperiam.ipsam voluptatem.</p>
-                    <div class="caption-btns">
-                    	<a href="#">See More</a>
-                        <a href="#">Buy Now</a>
-                    </div>					
-                </div>
-            </Carousel.Item>
-
-            <Carousel.Item>
-                <img className="d-block w-100" src={Slide3} alt="slide 1" />
-                <div class="kode-caption-2">
-                	<h5>Are you searching a book...?</h5>
-                	<h2>Biggest Library</h2>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor emque laudantium, totam rem aperiam.ipsam voluptatem.</p>
-                    <div class="caption-btns">
-                    	<a href="#">See More</a>
-                        <a href="#">Buy Now</a>
-                    </div>					
-                </div>
-            </Carousel.Item>
-        </Carousel>
+        <>
+            <div class="kode-banner">
+                <ul class="bxslider">
+                    <li>
+                        <img src={Slide1} alt="" />
+                        <div class="kode-caption-2">
+                            <h5>Are you searching a book...?</h5>
+                            <h2>Biggest Library</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor emque laudantium, totam rem aperiam.ipsam voluptatem.</p>
+                            <div class="caption-btns">
+                                <a href="#">See More</a>
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src={Slide2} alt="" />
+                        <div class="kode-caption-2">
+                            <h5>Are you searching a book...?</h5>
+                            <h2>Biggest Library</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor emque laudantium, totam rem aperiam.ipsam voluptatem.</p>
+                            <div class="caption-btns">
+                                <a href="#">See More</a>
+                                <a href="#">Buy Now</a>
+                            </div>					
+                        </div>
+                    </li>
+                    <li>
+                        <img src={Slide3} alt="" />
+                        <div class="kode-caption-2">
+                            <h5>Are you searching a book...?</h5>
+                            <h2>Biggest Library</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor emque laudantium, totam rem aperiam.ipsam voluptatem.</p>
+                            <div class="caption-btns">
+                                <a href="#">See More</a>
+                                <a href="#">Buy Now</a>
+                            </div>					
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </>
     );
 }
 
