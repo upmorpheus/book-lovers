@@ -5,7 +5,7 @@ import Slide3 from '../../assets/images/banner-3.png';
 
 const Landing = () => {
     return (
-        <>
+        <div class="wrapper kode-header-class-3">
             <div class="kode-banner">
                 <ul class="bxslider">
                     <li>
@@ -46,7 +46,7 @@ const Landing = () => {
                     </li>
                 </ul>
             </div>
-        </>
+        </div>
     );
 }
 

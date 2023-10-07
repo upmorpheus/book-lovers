@@ -8,7 +8,6 @@ import {
 import Home from "./views";
 import Login from "./views/auth/Login";
 import Header from "./components/header";
-import './App.scss';
 
 const publicRouter = createBrowserRouter(createRoutesFromElements(
   [
