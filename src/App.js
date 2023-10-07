@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import Home from "./views";
 import Login from "./views/auth/Login";
+import Header from "./components/header";
 import './App.scss';
 
 const publicRouter = createBrowserRouter(createRoutesFromElements(
@@ -18,19 +19,22 @@ const publicRouter = createBrowserRouter(createRoutesFromElements(
 
 const privateRouter = createBrowserRouter(
     createRoutesFromElements(
-      <>
-        <Route path='/' element={<Home />}>
+      <Route path='/' element={<Home />}>
             <Route path='start'>
                 <Route path='home' element={<Home />} />
             </Route>
-        </Route>,
-      </>
+      </Route>
     ),
 );
 
 function App() {
     const logged = useSelector((state) => state.app.data)
-    return <RouterProvider router={!logged ? privateRouter : publicRouter} />
+    return (
+      <>
+        <Header />
+        <RouterProvider router={!logged ? privateRouter : publicRouter} />
+      </>
+    );
 };
 
 export default App;
