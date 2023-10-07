@@ -1,30 +1,30 @@
-<div class="modal-header bg-theme-colored">
-  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <h4 class="modal-title text-white" id="myModalLabel">Reservation Form</h4>
+<div className="modal-header bg-theme-colored">
+  <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h4 className="modal-title text-white" id="myModalLabel">Reservation Form</h4>
 </div>
-<div class="p-40">
+<div className="p-40">
   <!-- Reservation Form Start-->
-    <form id="reservation_form_popup" name="reservation_form" class="reservation-form" method="post" action="https://kodesolution.com/html/2016/studypress-html/demo/ajax-load/includes/reservation.php"><h3 class="mt-0 line-bottom text-theme-colored mb-40">Get A Free Service<span class="text-theme-colored font-weight-600"> Now!</span></h3>
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="form-group mb-30">
-            <input placeholder="Enter Name" type="text" id="reservation_name" name="reservation_name" required="" class="form-control">
+    <form id="reservation_form_popup" name="reservation_form" className="reservation-form" method="post" action="https://kodesolution.com/html/2016/studypress-html/demo/ajax-load/includes/reservation.php"><h3 className="mt-0 line-bottom text-theme-colored mb-40">Get A Free Service<span className="text-theme-colored font-weight-600"> Now!</span></h3>
+      <div className="row">
+        <div className="col-sm-12">
+          <div className="form-group mb-30">
+            <input placeholder="Enter Name" type="text" id="reservation_name" name="reservation_name" required="" className="form-control">
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="form-group mb-30">
-            <input placeholder="Email" type="text" id="reservation_email" name="reservation_email" class="form-control" required="">
+        <div className="col-sm-6">
+          <div className="form-group mb-30">
+            <input placeholder="Email" type="text" id="reservation_email" name="reservation_email" className="form-control" required="">
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="form-group mb-30">
-            <input placeholder="Phone" type="text" id="reservation_phone" name="reservation_phone" class="form-control" required="">
+        <div className="col-sm-6">
+          <div className="form-group mb-30">
+            <input placeholder="Phone" type="text" id="reservation_phone" name="reservation_phone" className="form-control" required="">
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="form-group mb-30">
-            <div class="styled-select">
-              <select id="car_select" name="car_select" class="form-control" required="">
+        <div className="col-sm-6">
+          <div className="form-group mb-30">
+            <div className="styled-select">
+              <select id="car_select" name="car_select" className="form-control" required="">
                 <option value="">- Select Your Course Type -</option>
                 <option value="Toyota">Children Lesson</option>
                 <option value="Jeep">Adult Lesson</option>
@@ -36,15 +36,15 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="form-group mb-30">
-            <input name="reservation_date" class="form-control required date-picker" type="text" placeholder="Reservation Date" aria-required="true">
+        <div className="col-sm-6">
+          <div className="form-group mb-30">
+            <input name="reservation_date" className="form-control required date-picker" type="text" placeholder="Reservation Date" aria-required="true">
           </div>
         </div>
-        <div class="col-sm-12">
-          <div class="form-group mb-0 mt-0">
-            <input name="form_botcheck" class="form-control" type="hidden" value="">
-            <button type="submit" class="btn btn-colored btn-theme-colored btn-lg btn-flat border-left-theme-colored-4px" data-loading-text="Please wait...">Submit Now</button>
+        <div className="col-sm-12">
+          <div className="form-group mb-0 mt-0">
+            <input name="form_botcheck" className="form-control" type="hidden" value="">
+            <button type="submit" className="btn btn-colored btn-theme-colored btn-lg btn-flat border-left-theme-colored-4px" data-loading-text="Please wait...">Submit Now</button>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
           var form_btn = $(form).find('button[type="submit"]');
           var form_result_div = '#form-result';
           $(form_result_div).remove();
-          form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+          form_btn.before('<div id="form-result" className="alert alert-success" role="alert" style="display: none;"></div>');
           var form_btn_old_msg = form_btn.html();
           form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
           $(form).ajaxSubmit({

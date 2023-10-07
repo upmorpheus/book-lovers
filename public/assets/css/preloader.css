@@ -38,8 +38,8 @@
 
 /*=======Markup=====
 
-<div class="preloader-whirlpool">
-	<div class="whirlpool"></div>
+<div className="preloader-whirlpool">
+	<div className="whirlpool"></div>
 </div>
 
  */
@@ -123,15 +123,15 @@
 
 /*=======Markup=====
 
-<div class="preloader-floating-circles">
-	<div class="f_circleG" id="frotateG_01"></div>
-	<div class="f_circleG" id="frotateG_02"></div>
-	<div class="f_circleG" id="frotateG_03"></div>
-	<div class="f_circleG" id="frotateG_04"></div>
-	<div class="f_circleG" id="frotateG_05"></div>
-	<div class="f_circleG" id="frotateG_06"></div>
-	<div class="f_circleG" id="frotateG_07"></div>
-	<div class="f_circleG" id="frotateG_08"></div>
+<div className="preloader-floating-circles">
+	<div className="f_circleG" id="frotateG_01"></div>
+	<div className="f_circleG" id="frotateG_02"></div>
+	<div className="f_circleG" id="frotateG_03"></div>
+	<div className="f_circleG" id="frotateG_04"></div>
+	<div className="f_circleG" id="frotateG_05"></div>
+	<div className="f_circleG" id="frotateG_06"></div>
+	<div className="f_circleG" id="frotateG_07"></div>
+	<div className="f_circleG" id="frotateG_08"></div>
 </div>
 
  */
@@ -299,11 +299,11 @@
 
 /*=======Markup=====
 
-<div class="preloader-eight-spinning">
-	<div class="cssload-lt"></div>
-	<div class="cssload-rt"></div>
-	<div class="cssload-lb"></div>
-	<div class="cssload-rb"></div>
+<div className="preloader-eight-spinning">
+	<div className="cssload-lt"></div>
+	<div className="cssload-rt"></div>
+	<div className="cssload-lb"></div>
+	<div className="cssload-rb"></div>
 </div>
 
  */
@@ -653,7 +653,7 @@
 
 /*=======Markup=====
 
-<div class="preloader-double-torus"></div>
+<div className="preloader-double-torus"></div>
 
  */
 .preloader-double-torus {
@@ -694,7 +694,7 @@
 
 /*=======Markup=====
 
-<div class="preloader-tube-tunnel"></div>
+<div className="preloader-tube-tunnel"></div>
 
  */
 .preloader-tube-tunnel {
@@ -744,7 +744,7 @@
 
 /*=======Markup=====
 
-<div class="preloader-speeding-wheel"></div>
+<div className="preloader-speeding-wheel"></div>
 
  */
 .preloader-speeding-wheel {
@@ -785,8 +785,8 @@
 
 /*=======Markup=====
 
-<div class="preloader-loading-wrapper">
-	<div class="cssload-loading"><i></i><i></i></div>
+<div className="preloader-loading-wrapper">
+	<div className="cssload-loading"><i></i><i></i></div>
 </div>
 
  */
@@ -854,8 +854,8 @@
 
 /*=======Markup=====
 
-<div class="preloader-dot-loading">
-	<div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+<div className="preloader-dot-loading">
+	<div className="cssload-loading"><i></i><i></i><i></i><i></i></div>
 </div>
 
  */
@@ -1002,14 +1002,14 @@
 
 /*=======Markup=====
 
-<div class="preloader-fountainTextG">
-	<div id="fountainTextG_1" class="fountainTextG">L</div>
-	<div id="fountainTextG_2" class="fountainTextG">o</div>
-	<div id="fountainTextG_3" class="fountainTextG">a</div>
-	<div id="fountainTextG_4" class="fountainTextG">d</div>
-	<div id="fountainTextG_5" class="fountainTextG">i</div>
-	<div id="fountainTextG_6" class="fountainTextG">n</div>
-	<div id="fountainTextG_7" class="fountainTextG">g</div>
+<div className="preloader-fountainTextG">
+	<div id="fountainTextG_1" className="fountainTextG">L</div>
+	<div id="fountainTextG_2" className="fountainTextG">o</div>
+	<div id="fountainTextG_3" className="fountainTextG">a</div>
+	<div id="fountainTextG_4" className="fountainTextG">d</div>
+	<div id="fountainTextG_5" className="fountainTextG">i</div>
+	<div id="fountainTextG_6" className="fountainTextG">n</div>
+	<div id="fountainTextG_7" className="fountainTextG">g</div>
 </div>
 
 */
@@ -1163,8 +1163,8 @@
 
 /*=======Markup=====
 
-<div class="preloader-circle-loading-wrapper">
-	<div class="cssload-loader"></div>
+<div className="preloader-circle-loading-wrapper">
+	<div className="cssload-loader"></div>
 </div>
 
  */
@@ -1255,7 +1255,7 @@
 
 /*=======Markup=====
 
-<div class="preloader-dot-circle-rotator"></div>
+<div className="preloader-dot-circle-rotator"></div>
 
 */
 .preloader-dot-circle-rotator{
@@ -1339,7 +1339,7 @@
 
 /*=======Markup=====
 
-<div class="preloader-bubblingG">
+<div className="preloader-bubblingG">
 	<span id="bubblingG_1">
 	</span>
 	<span id="bubblingG_2">
@@ -1478,7 +1478,7 @@
 
 /*=======Markup=====
 
-<div class="preloader-coffee"></div>
+<div className="preloader-coffee"></div>
 */
 .preloader-coffee {
 	text-align:left;
@@ -1578,10 +1578,10 @@
 
 /*=======Markup=====
 
-<div class="preloader-orbit-loading">
-	<div class="cssload-inner cssload-one"></div>
-	<div class="cssload-inner cssload-two"></div>
-	<div class="cssload-inner cssload-three"></div>
+<div className="preloader-orbit-loading">
+	<div className="cssload-inner cssload-one"></div>
+	<div className="cssload-inner cssload-two"></div>
+	<div className="cssload-inner cssload-three"></div>
 </div>
 */
 .preloader-orbit-loading {
@@ -1784,8 +1784,8 @@
 
 /*=======Markup=====
 
-<div class="preloader-battery">
-	<div class="cssload-liquid"></div>
+<div className="preloader-battery">
+	<div className="cssload-liquid"></div>
 </div>
 */
 .preloader-battery {
@@ -2350,7 +2350,7 @@
 
 /*=======Markup=====
 
-<div class="preloader-equalizer">
+<div className="preloader-equalizer">
 	<ul>
 		<li></li>
 		<li></li>
@@ -2558,10 +2558,10 @@
 
 /*=======Markup=====
 
-<div class="preloader-square-swapping">
-	<div class="cssload-square-part cssload-square-green"></div>
-	<div class="cssload-square-part cssload-square-pink"></div>
-	<div class="cssload-square-blend"></div>
+<div className="preloader-square-swapping">
+	<div className="cssload-square-part cssload-square-green"></div>
+	<div className="cssload-square-part cssload-square-pink"></div>
+	<div className="cssload-square-blend"></div>
 </div>
 */
 .preloader-square-swapping {
@@ -2738,10 +2738,10 @@
 
 /*=======Markup=====
 
-<div class="preloader-jackhammer">
-	<ul class="cssload-flex-container">
+<div className="preloader-jackhammer">
+	<ul className="cssload-flex-container">
 		<li>
-			<span class="cssload-loading"></span>
+			<span className="cssload-loading"></span>
 		</li>
 	</div>
 </div>

@@ -81,22 +81,22 @@
         doResponsive();
         
         function prepare() {
-            element.append('<div class="ClassyCountdown-wrapper">' +
-                    '<div class="ClassyCountdown-days">' +
+            element.append('<div className="ClassyCountdown-wrapper">' +
+                    '<div className="ClassyCountdown-days">' +
                         '<input type="text" />' +
-                        '<span class="ClassyCountdown-value"><div></div><span></span></span>' +
+                        '<span className="ClassyCountdown-value"><div></div><span></span></span>' +
                     '</div>' +
-                    '<div class="ClassyCountdown-hours">' +
+                    '<div className="ClassyCountdown-hours">' +
                         '<input type="text" />' +
-                        '<span class="ClassyCountdown-value"><div></div><span></span></span>' +
+                        '<span className="ClassyCountdown-value"><div></div><span></span></span>' +
                     '</div>' +
-                    '<div class="ClassyCountdown-minutes">' +
+                    '<div className="ClassyCountdown-minutes">' +
                         '<input type="text" />' +
-                        '<span class="ClassyCountdown-value"><div></div><span></span></span>' +
+                        '<span className="ClassyCountdown-value"><div></div><span></span></span>' +
                     '</div>' +
-                    '<div class="ClassyCountdown-seconds">' +
+                    '<div className="ClassyCountdown-seconds">' +
                         '<input type="text" />' +
-                        '<span class="ClassyCountdown-value"><div></div><span></span></span>' +
+                        '<span className="ClassyCountdown-value"><div></div><span></span></span>' +
                     '</div>' +
                 '</div>');
             element.find('.ClassyCountdown-days input').knob($.extend({

@@ -538,7 +538,7 @@ var THEMEMASCOT = {};
                 image: {
                     verticalFit: true,
                     titleSrc: function(item) {
-                        return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+                        return item.el.attr('title') + ' &middot; <a className="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
                     }
                 },
                 gallery: {
@@ -993,32 +993,32 @@ var THEMEMASCOT = {};
                 align: "left",
                 effect: "slide",
                 animation: "none",
-                indicatorFirstLevel: "<i class='fa fa-angle-down'></i>",
-                indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"
+                indicatorFirstLevel: "<i className='fa fa-angle-down'></i>",
+                indicatorSecondLevel: "<i className='fa fa-angle-right'></i>"
             });
             $("#menuzord-right").menuzord({
                 align: "right",
                 effect: "slide",
                 animation: "none",
-                indicatorFirstLevel: "<i class='fa fa-angle-down'></i>",
-                indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"
+                indicatorFirstLevel: "<i className='fa fa-angle-down'></i>",
+                indicatorSecondLevel: "<i className='fa fa-angle-right'></i>"
             });
             $("#menuzord-side-panel").menuzord({
                 align: "right",
                 effect: "slide",
                 animation: "none",
                 indicatorFirstLevel: "",
-                indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"
+                indicatorSecondLevel: "<i className='fa fa-angle-right'></i>"
             });
             
             $("#menuzord-verticalnav").menuzord({
                 align: "right",
                 effect: "slide",
                 animation: "none",
-                indicatorFirstLevel: "<i class='fa fa-angle-down'></i>",
-                indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"
-                /*indicatorFirstLevel: "<i class='fa fa-angle-right'></i>",
-                indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"*/
+                indicatorFirstLevel: "<i className='fa fa-angle-down'></i>",
+                indicatorSecondLevel: "<i className='fa fa-angle-right'></i>"
+                /*indicatorFirstLevel: "<i className='fa fa-angle-right'></i>",
+                indicatorSecondLevel: "<i className='fa fa-angle-right'></i>"*/
             });
         },
 
@@ -1300,7 +1300,7 @@ var THEMEMASCOT = {};
             var endingdate = $clock.data("endingdate");
             $clock.countdown(endingdate, function(event) {
                 var countdown_text = '' +
-                    '<ul class="countdown-timer">' +
+                    '<ul className="countdown-timer">' +
                     '<li>%D <span>Days</span></li>' +
                     '<li>%H <span>Hours</span></li>' +
                     '<li>%M <span>Minutes</span></li>' +
@@ -1354,7 +1354,7 @@ var THEMEMASCOT = {};
                 if (!current_item.hasClass('appeared')) {
                     var percent = current_item.data('percent');
                     var barcolor = current_item.data('barcolor');
-                    current_item.append('<span class="percent">' + percent + '%' + '</span>').css('background-color', barcolor).css('width', percent + '%').addClass('appeared');
+                    current_item.append('<span className="percent">' + percent + '%' + '</span>').css('background-color', barcolor).css('width', percent + '%').addClass('appeared');
                 }
                 
             });
@@ -1389,7 +1389,7 @@ var THEMEMASCOT = {};
                     accessToken: current_div.data('accesstoken'),
                     resolution: current_div.data('resolution'),
                     limit: current_div.data('limit'),
-                    template: '<div class="item"><figure><img src="{{image}}" /><a href="{{link}}" class="link-out" target="_blank"><i class="fa fa-link"></i></a></figure></div>',
+                    template: '<div className="item"><figure><img src="{{image}}" /><a href="{{link}}" className="link-out" target="_blank"><i className="fa fa-link"></i></a></figure></div>',
                     after: function() {
                     }
                 });
@@ -1405,7 +1405,7 @@ var THEMEMASCOT = {};
                     accessToken: current_div.data('accesstoken'),
                     resolution: current_div.data('resolution'),
                     limit: current_div.data('limit'),
-                    template: '<div class="item"><figure><img src="{{image}}" /><a href="{{link}}" class="link-out" target="_blank"><i class="fa fa-link"></i></a></figure></div>',
+                    template: '<div className="item"><figure><img src="{{image}}" /><a href="{{link}}" className="link-out" target="_blank"><i className="fa fa-link"></i></a></figure></div>',
                     after: function() {
                         current_div.owlCarousel({
                             rtl: THEMEMASCOT.isRTL.check(),
@@ -1480,7 +1480,7 @@ var THEMEMASCOT = {};
                 $twitter_feed.twittie({
                     username: $twitter_feed.data('username'),
                     dateFormat: '%b. %d, %Y',
-                    template: '{{tweet}} <div class="date">{{date}}</div>',
+                    template: '{{tweet}} <div className="date">{{date}}</div>',
                     count: ( $twitter_feed.data("count") === undefined ) ? 4: $twitter_feed.data("count"),
                     loadingText: 'Loading!'
                 });
@@ -1490,7 +1490,7 @@ var THEMEMASCOT = {};
                 $twitter_feed_carousel.twittie({
                     username: $twitter_feed_carousel.data('username'),
                     dateFormat: '%b. %d, %Y',
-                    template: '{{tweet}} <div class="date">{{date}}</div>',
+                    template: '{{tweet}} <div className="date">{{date}}</div>',
                     count: ( $twitter_feed_carousel.data("count") === undefined ) ? 4: $twitter_feed_carousel.data("count"),
                     loadingText: 'Loading!'
                 }, function() {
@@ -1617,8 +1617,8 @@ var THEMEMASCOT = {};
                     dots: data_dots,
                     nav: data_nav,
                     navText: [
-                        '<i class="pe-7s-angle-left"></i>',
-                        '<i class="pe-7s-angle-right"></i>'
+                        '<i className="pe-7s-angle-left"></i>',
+                        '<i className="pe-7s-angle-right"></i>'
                     ]
                 });
             });
@@ -1637,8 +1637,8 @@ var THEMEMASCOT = {};
                     dots: data_dots,
                     nav: data_nav,
                     navText: [
-                        '<i class="fa fa-angle-left"></i>',
-                        '<i class="fa fa-angle-right"></i>'
+                        '<i className="fa fa-angle-left"></i>',
+                        '<i className="fa fa-angle-right"></i>'
                     ],
                     responsive: {
                         0: {
@@ -1684,8 +1684,8 @@ var THEMEMASCOT = {};
                     dots: data_dots,
                     nav: data_nav,
                     navText: [
-                        '<i class="fa fa-angle-left"></i>',
-                        '<i class="fa fa-angle-right"></i>'
+                        '<i className="fa fa-angle-left"></i>',
+                        '<i className="fa fa-angle-right"></i>'
                     ],
                     responsive: {
                         0: {
@@ -1732,8 +1732,8 @@ var THEMEMASCOT = {};
                     dots: data_dots,
                     nav: data_nav,
                     navText: [
-                        '<i class="fa fa-angle-left"></i>',
-                        '<i class="fa fa-angle-right"></i>'
+                        '<i className="fa fa-angle-left"></i>',
+                        '<i className="fa fa-angle-right"></i>'
                     ],
                     responsive: {
                         0: {
@@ -1779,8 +1779,8 @@ var THEMEMASCOT = {};
                     dots: data_dots,
                     nav: data_nav,
                     navText: [
-                        '<i class="fa fa-angle-left"></i>',
-                        '<i class="fa fa-angle-right"></i>'
+                        '<i className="fa fa-angle-left"></i>',
+                        '<i className="fa fa-angle-right"></i>'
                     ],
                     responsive: {
                         0: {
@@ -1826,8 +1826,8 @@ var THEMEMASCOT = {};
                     dots: data_dots,
                     nav: data_nav,
                     navText: [
-                        '<i class="fa fa-angle-left"></i>',
-                        '<i class="fa fa-angle-right"></i>'
+                        '<i className="fa fa-angle-left"></i>',
+                        '<i className="fa fa-angle-right"></i>'
                     ],
                     responsive: {
                         0: {
@@ -1873,8 +1873,8 @@ var THEMEMASCOT = {};
                     dots: data_dots,
                     nav: data_nav,
                     navText: [
-                        '<i class="fa fa-angle-left"></i>',
-                        '<i class="fa fa-angle-right"></i>'
+                        '<i className="fa fa-angle-left"></i>',
+                        '<i className="fa fa-angle-right"></i>'
                     ],
                     responsive: {
                         0: {
@@ -1916,8 +1916,8 @@ var THEMEMASCOT = {};
                     dots: data_dots,
                     nav: data_nav,
                     navText: [
-                        '<i class="fa fa-angle-left"></i>',
-                        '<i class="fa fa-angle-right"></i>'
+                        '<i className="fa fa-angle-left"></i>',
+                        '<i className="fa fa-angle-right"></i>'
                     ],
                     responsive: {
                         0: {
@@ -1959,8 +1959,8 @@ var THEMEMASCOT = {};
                     minSlides: ( $bxslider.data("count") === undefined ) ? 2: $bxslider.data("count"),
                     slideMargin: 20,
                     pager: false,
-                    prevText: '<i class="fa fa-angle-left"></i>',
-                    nextText: '<i class="fa fa-angle-right"></i>'
+                    prevText: '<i className="fa fa-angle-left"></i>',
+                    nextText: '<i className="fa fa-angle-right"></i>'
                 });
             }
         },
