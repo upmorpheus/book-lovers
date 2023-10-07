@@ -1,9 +1,0 @@
-$primary: #6610f2;
-
-/* make the customizations */
-$theme-colors: (
-  'primary': $primary,
-);
-
-/* import bootstrap to set changes */
-@import '~bootstrap/scss/bootstrap';
