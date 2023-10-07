@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/lib/integration/react';
 import App from './App';
-import './index.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './custom.scss';
 import storageConfig from './store.js';
 
 const { store, persistor } = storageConfig();
