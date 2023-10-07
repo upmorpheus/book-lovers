@@ -82,7 +82,7 @@ const Header = () => {
                           <li>
                             <div className="search-form-wrapper">
                               <form method="get" className="mt-10">
-                                <input type="text" onfocus="if(this.value =='Enter your search') { this.value = ''; }" onBlur="if(this.value == '') { this.value ='Enter your search'; }" value="Enter your search" id="searchinput" name="s" className=""/>
+                                <input type="text" onFocus="if(this.value =='Enter your search') { this.value = ''; }" onBlur="if(this.value == '') { this.value ='Enter your search'; }" value="Enter your search" id="searchinput" name="s" className=""/>
                                 <label><input type="submit" name="submit" value=""/></label>
                               </form>
                             </div>
