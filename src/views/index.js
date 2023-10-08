@@ -2,7 +2,7 @@ import React from "react";
 import Landing from "../components/landing/Landing";
 
 const Home = () => (
-    <div className="wrapper kode-header-class-3">
+    <div id="wrapper" class="clearfix">
         <Landing />
     </div>
 );
