@@ -5,8 +5,7 @@
     .pattern {
         display: flex;
         justify-content: space-around;
-        background: rgb(213, 213, 213);
-        padding: 60px;
+        padding: 50px;
 
         .image-left {
             flex: 1;
@@ -16,6 +15,31 @@
         .pattern-text {
             flex: 1;
             margin: 30px;
+
+            p {
+                width: 600px;
+            }
+        }
+    }
+
+    .books {
+        display: flex;
+        justify-content: space-around;
+        background: rgb(213, 213, 213);
+        padding: 50px;
+        flex-wrap: wrap;
+
+        .book-card {
+
+            .book-logo {
+                height: 500px;
+                width: 380px;
+            }
+    
+            .card-text-book {
+                display: flex;
+                justify-content: space-around;
+            }
         }
     }
 }
