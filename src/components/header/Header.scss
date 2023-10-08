@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background: rgb(17, 0, 249);
+    height: 140px;
+    width: 100%;
+    .baner {
+        display: flex;
+        justify-content: space-around;
+        height: 80px;
+
+        .logo {
+            height: 70px;
+            margin: 5px;
+        }
+
+        .auth {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                margin: 5px;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(212, 182, 10);
+        height: 60px;
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        :hover {
+            background: rgb(17, 0, 249);
+            padding: 19px;
+        }
+    }
+}
