@@ -1,0 +1,10 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    
+    .pattern {
+        display: flex;
+        margin: 20px;
+        padding: 40px;
+    }
+}
