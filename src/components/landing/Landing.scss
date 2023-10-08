@@ -66,12 +66,23 @@
 
     .members {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         background-color: rgb(107, 106, 106);
         padding: 50px;
 
-        .card {
+        h1 {
+            padding: 50px 100px 50px 100px;
+        }
+
+        .member-card {
+            display: flex;
+            justify-content: space-around;
             margin: 20px;
+
+            .card {
+                margin: 20px;
+            }
         }
     }
 }

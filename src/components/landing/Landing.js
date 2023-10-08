@@ -72,18 +72,21 @@ const Landing = () => {
             </div>
 
             <div className="members">
-                {Members.map((item) =>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={item.src} />
-                        <Card.Body>
-                            <Card.Title>{item.name}</Card.Title>
-                            <Card.Text>
-                                {item.content}
-                            </Card.Text>
-                            <Button variant="primary">View Details</Button>
-                        </Card.Body>
-                    </Card>
-                )}
+                <h1>MEMBERS</h1>
+                <div className="member-card">
+                    {Members.map((item) =>
+                        <Card style={{ width: '18rem' }}>
+                            <Card.Img variant="top" src={item.src} />
+                            <Card.Body>
+                                <Card.Title>{item.name}</Card.Title>
+                                <Card.Text>
+                                    {item.content}
+                                </Card.Text>
+                                <Button variant="primary">View Details</Button>
+                            </Card.Body>
+                        </Card>
+                    )}
+                </div>
             </div>
         </div>
     );
