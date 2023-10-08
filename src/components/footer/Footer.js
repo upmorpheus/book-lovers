@@ -25,7 +25,8 @@ const Footer = () => (
             </div>
         </div>
         <div className="copyright">
-            <a>Copyright by Dr. Ingrid Naiman 2023</a>
+            <a>Copyright 2023 by Ingrid Naiman</a>
+            <a>All Rights Reserved</a>
         </div>
     </div>
 );
