@@ -60,8 +60,29 @@
         background-size: cover;
         background-attachment: fixed;
         background-position: center center;
-        height: 300px;
+        height: 500px;
         position: relative;
+    }
+
+    .introduce {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+
+        .image-left {
+            height: 400px;
+            margin: 30px;
+            padding-right: 100px;
+        }
+
+        .pattern-text {
+            margin: 30px;
+
+            p {
+                width: 600px;
+            }
+        }
     }
 
     .members {

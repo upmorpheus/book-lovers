@@ -10,9 +10,10 @@ import PatterImg from "../../assets/4.png"
 import Book1 from "../../assets/book1.png";
 import Book2 from "../../assets/book2.png";
 import Book3 from "../../assets/book3.png";
-import Member1 from "../../assets/member1.png"
-import Member2 from "../../assets/member2.png"
-import Member3 from "../../assets/member3.png"
+import IntroImg from "../../assets/dc2.png";
+import Member1 from "../../assets/member1.png";
+import Member2 from "../../assets/member2.png";
+import Member3 from "../../assets/member3.png";
 import './Landing.scss';
 
 const Books = [
@@ -68,11 +69,22 @@ const Landing = () => {
             </div>
 
             <div className="cta-bg">
+            </div>
 
+            <div className="introduce">
+                <Image className="image-left" src={IntroImg} rounded/>
+                <div className="pattern-text">
+                    <h1>Why Choose Us?</h1>
+                    <p>The Cweren Law Firm is a recognized leader in landlord tenant representation throughout Texas.
+                        The largests professional property management companies the region.
+                        The largest professional property management companies is a recognized leader in landlord
+                         tenant representation throughout Texas
+                    </p>
+                </div>
             </div>
 
             <div className="members">
-                <h1>MEMBERS</h1>
+                <h1>Researchers</h1>
                 <div className="member-card">
                     {Members.map((item) =>
                         <Card style={{ width: '18rem' }}>
