@@ -24,38 +24,50 @@
 
     .books {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         background: rgb(213, 213, 213);
         padding: 50px;
-        flex-wrap: wrap;
 
-        .book-card {
+        h1 {
+            padding: 50px 100px 50px 100px;
+        }
 
-            .book-logo {
-                height: 500px;
-                width: 380px;
-            }
-    
-            .card-text-book {
-                display: flex;
-                justify-content: space-around;
+        .books-gallery {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 100px 50px 100px;
+            flex-wrap: wrap;
+
+            .book-card {
+                margin: 20px;
+                padding: 20px;
+
+                .book-logo {
+                    height: 500px;
+                    width: 380px;
+                }
+        
+                .card-text-book {
+                    display: flex;
+                    justify-content: space-around;
+                }
             }
         }
     }
 
-    .parellax {
-        height: 600px;
-        overflow: hidden;
-        
-        .parellax-img {
-            width: -webkit-fill-available;
-        }
+    .cta-bg {
+        background: url('../../assets/banner-2.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        height: 300px;
+        position: relative;
     }
 
     .members {
         display: flex;
         justify-content: space-around;
-        background-color: rgb(169, 169, 169);
+        background-color: rgb(107, 106, 106);
         padding: 50px;
 
         .card {

@@ -3,14 +3,13 @@ import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Carouselfade from "../carousel/CarouselSlow";
-import slide1 from "../../assets/1.jpeg";
-import slide2 from "../../assets/2.jpeg";
-import slide3 from "../../assets/4.jpeg";
-import slide4 from "../../assets/4.png";
+import Slide1 from "../../assets/1.jpeg";
+import Slide2 from "../../assets/2.jpeg";
+import Slide3 from "../../assets/4.jpeg";
+import PatterImg from "../../assets/4.png"
 import Book1 from "../../assets/book1.png";
 import Book2 from "../../assets/book2.png";
 import Book3 from "../../assets/book3.png";
-import Bgimg from "../../assets/banner-3.png";
 import Member1 from "../../assets/member1.png"
 import Member2 from "../../assets/member2.png"
 import Member3 from "../../assets/member3.png"
@@ -31,10 +30,10 @@ const Members = [
 const Landing = () => {
     return (
         <div className="landing">
-            <Carouselfade slide1={slide1} slide2={slide2} slide3={slide3} />
+            <Carouselfade slide1={Slide1} slide2={Slide2} slide3={Slide3} />
 
             <div className="pattern">
-                <Image className="image-left" src={slide4} rounded/>
+                <Image className="image-left" src={PatterImg} rounded/>
                 <div className="pattern-text">
                     <h1>THE WORLD’S BEST EDUCATION</h1>
                     <p>Many experts throughout history have regarded cancer salves and pastes as the
@@ -51,22 +50,25 @@ const Landing = () => {
             </div>
 
             <div className="books">
-                {Books.map((item) =>
-                    <Card className="book-card">
-                        <Card.Img className="book-logo" variant="top" src={item.src} />
-                        <Card.Body>
-                            <Card.Text className="card-text-book">
-                                <a>{item.name}</a>                                
-                                <a>{item.views}</a>
-                                <a>${item.price}</a>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                )}
+                <h1>BOOKS</h1>
+                <div className="books-gallery">
+                    {Books.map((item) =>
+                        <Card className="book-card">
+                            <Card.Img className="book-logo" variant="top" src={item.src} />
+                            <Card.Body>
+                                <Card.Text className="card-text-book">
+                                    <a>{item.name}</a>                                
+                                    <a>{item.views}</a>
+                                    <a>${item.price}</a>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    )}
+                </div>
             </div>
 
-            <div className="parellax">
-                <img className="parellax-img" src={Bgimg} />
+            <div className="cta-bg">
+
             </div>
 
             <div className="members">
