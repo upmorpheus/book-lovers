@@ -42,4 +42,24 @@
             }
         }
     }
+
+    .parellax {
+        height: 600px;
+        overflow: hidden;
+        
+        .parellax-img {
+            width: -webkit-fill-available;
+        }
+    }
+
+    .members {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(169, 169, 169);
+        padding: 50px;
+
+        .card {
+            margin: 20px;
+        }
+    }
 }

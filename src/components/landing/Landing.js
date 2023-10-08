@@ -7,16 +7,26 @@ import slide1 from "../../assets/1.jpeg";
 import slide2 from "../../assets/2.jpeg";
 import slide3 from "../../assets/4.jpeg";
 import slide4 from "../../assets/4.png";
-import book1 from "../../assets/book1.png";
-import book2 from "../../assets/book2.png";
-import book3 from "../../assets/book3.png";
+import Book1 from "../../assets/book1.png";
+import Book2 from "../../assets/book2.png";
+import Book3 from "../../assets/book3.png";
+import Bgimg from "../../assets/banner-3.png";
+import Member1 from "../../assets/member1.png"
+import Member2 from "../../assets/member2.png"
+import Member3 from "../../assets/member3.png"
 import './Landing.scss';
 
 const Books = [
-    { name: "Immunity", src: book1, price: 35, views: 30 },
-    { name: "Parasite Cleansing", src: book2, price: 50, views: 30 },
-    { name: "Kitchen Doctor", src: book3, price: 65, views: 70 }
+    { name: "Immunity", src: Book1, price: 35, views: 30 },
+    { name: "Parasite Cleansing", src: Book2, price: 50, views: 30 },
+    { name: "Kitchen Doctor", src: Book3, price: 65, views: 70 }
 ];
+
+const Members = [
+    { name: "Ingrid Naiman", src: Member1, content: "Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit." },
+    { name: "Hiroki Moto", src: Member2, content: "Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit." },
+    { name: "Maria Conoba", src: Member3, content: "Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit." }
+]
 
 const Landing = () => {
     return (
@@ -56,10 +66,23 @@ const Landing = () => {
             </div>
 
             <div className="parellax">
-                <img src={bgimg} />
+                <img className="parellax-img" src={Bgimg} />
             </div>
 
-            
+            <div className="members">
+                {Members.map((item) =>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={item.src} />
+                        <Card.Body>
+                            <Card.Title>{item.name}</Card.Title>
+                            <Card.Text>
+                                {item.content}
+                            </Card.Text>
+                            <Button variant="primary">View Details</Button>
+                        </Card.Body>
+                    </Card>
+                )}
+            </div>
         </div>
     );
 }
