@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    background: rgb(179, 44, 251);
+    background: rgb(152, 21, 150);
     height: 140px;
     width: 100%;
     .baner {
@@ -26,23 +26,31 @@
                 color: white;
                 text-decoration: none;
             }
+
+            :hover {
+                color: yellow;
+            }
         }
     }
     
     .menu {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
-        background: rgb(229, 100, 254);
+        background: rgb(183, 57, 208);
+        padding-right: 80px;
         height: 60px;
         
         a {
             color: white;
+            font-size: 18px;
             text-decoration: none;
+            padding: 19px;
         }
 
         :hover {
-            background: rgb(170, 40, 240);
+            background: rgb(150, 42, 172);
+            color: yellow;
             padding: 19px;
         }
     }
