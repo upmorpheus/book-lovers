@@ -1,5 +1,5 @@
-import { call, put, takeEvery } from 'redux-saga/effects'
-import { GET_USERS_SUCCESS, GET_USERS_FAILURE } from "../actions"
+import { call, put, takeEvery } from 'redux-saga/effects';
+import { GET_USERS_SUCCESS, GET_USERS_FAILURE } from "../actions";
 
 export function* getUsersRequest(action) {
    try {
