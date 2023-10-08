@@ -8,6 +8,7 @@ import {
 import Home from "./views";
 import Login from "./views/auth/Login";
 import Header from "./components/header";
+import Footer from "./components/footer/Footer";
 
 const publicRouter = createBrowserRouter(createRoutesFromElements(
   [
@@ -32,6 +33,7 @@ function App() {
       <>
         <Header />
         <RouterProvider router={!logged ? privateRouter : publicRouter} />
+        <Footer />
       </>
     );
 };
