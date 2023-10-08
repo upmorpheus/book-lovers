@@ -20,8 +20,15 @@
             color: white;
         }
 
-        a {
-            margin: 5px;
+        .items {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            a {
+                margin: 20px;
+                text-decoration: none;
+            }
         }
     }
 
