@@ -3,7 +3,10 @@
     flex-direction: column;
     background: rgb(152, 21, 150);
     height: 140px;
+    position: absolute;
     width: 100%;
+    z-index: 2;
+
     .baner {
         display: flex;
         justify-content: space-between;
@@ -45,13 +48,14 @@
             color: white;
             font-size: 18px;
             text-decoration: none;
-            padding: 19px;
+            padding: 17px;
         }
 
         :hover {
             background: rgb(150, 42, 172);
             color: yellow;
-            padding: 19px;
+            padding: 17px;
+            border-bottom: solid 4px yellow;
         }
     }
 }
