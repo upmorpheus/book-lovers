@@ -40,19 +40,20 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        background: rgb(183, 57, 208);
+        background: rgb(175, 25, 173);
         padding-right: 80px;
         height: 60px;
         
         a {
             color: white;
             font-size: 18px;
+            font-family: Trajan Pro;
             text-decoration: none;
             padding: 17px;
         }
 
         :hover {
-            background: rgb(150, 42, 172);
+            background: rgb(149, 17, 146);
             color: yellow;
             padding: 17px;
             border-bottom: solid 4px yellow;
