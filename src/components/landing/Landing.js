@@ -23,9 +23,9 @@ const Books = [
 ];
 
 const Members = [
-    { name: "Ingrid Naiman", src: Member1, content: "Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit." },
-    { name: "Hiroki Moto", src: Member2, content: "Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit." },
-    { name: "Maria Conoba", src: Member3, content: "Lorem ipsum dolor sit amet, con amit sectetur adipisicing elit." }
+    { name: "Ingrid Naiman", src: Member1, content: "I have developed a complete line of herbal products and essential oils to recover from mold exposure." },
+    { name: "Hiroki Moto", src: Member2, content: "I am assuring the availability of digital materials needed to recover." },
+    { name: "Balaji Sampath", src: Member3, content: "I am administering the Locals.com community." }
 ]
 
 const Landing = () => {
@@ -36,16 +36,20 @@ const Landing = () => {
             <div className="pattern">
                 <Image className="image-left" src={PatterImg} rounded/>
                 <div className="pattern-text">
-                    <h1>THE WORLD’S BEST EDUCATION</h1>
-                    <p>Many experts throughout history have regarded cancer salves and pastes as the
-                         most thorough, safe, and efficacious way to treat cancer, especially skin and 
-                         breast cancers but also cancers of other organs. In this book, Ingrid Naiman 
-                         meticulously traces the use of such products in ancient India and by Hildegard of 
-                         Bingen, Native Americans, and modern physicians. She provides detailed instructions 
-                         for making and using the salves, a fair comparison of the pros and cons, and eight 
-                         pages of full color pictures showing responses to the products. Visit Cancer Salves 
-                         site for more information, answers to frequently asked questions, and a Checklist 
-                         for people facing cancer.
+                    <h1>Mold Journey</h1>
+                    <p>Within hours of exposure to moisture, mold can appear. Besides the risk 
+                        mold poses to health, it can cause serious property damage. Any property 
+                        or possessions that have been exposed to moisture may become colonized by mold. 
+                        This means that when there is heavy rain, melting snow, flooding, leaking pipes, 
+                        clogged pipes, poor drainage, damp crawl spaces, attics, or basements, mold will 
+                        probably be present. Likewise, mold can be found in air conditioners, air filtration 
+                        devices, humidifiers and dehumidifiers, certain kinds of medical equipment, potted 
+                        plants, greenhouses, refrigerators, washing machines, automobiles, hotels, restaurants, 
+                        libraries, concert halls, in short, just about anywhere. At best, mold will cause 
+                        deterioration and loss of value to real property and belongings. At worst, it will 
+                        eventually claim the lives of pets, loved ones, and oneself. The purpose of this 
+                        series is to promote vigilance surrounding mold and to define the correct procedures 
+                        for removing mold and recovering full health after exposure.
                     </p>
                 </div>
             </div>
@@ -74,11 +78,16 @@ const Landing = () => {
             <div className="introduce">
                 <Image className="image-left" src={IntroImg} rounded/>
                 <div className="pattern-text">
-                    <h1>Why Choose Us?</h1>
-                    <p>The Cweren Law Firm is a recognized leader in landlord tenant representation throughout Texas.
-                        The largests professional property management companies the region.
-                        The largest professional property management companies is a recognized leader in landlord
-                         tenant representation throughout Texas
+                    <h1>Your Guide to Recovery from Mold Exposure</h1>
+                    <p>Ingrid Naiman is a world respected author and clinician. Her house was flooded 
+                        following faulty installation of a washing machine, and she was deathly ill. 
+                        Contrary to the advice of many, she remediated the damage to the house, and eventually 
+                        recovered her her health using 100% natural methods. Her journey took several years 
+                        of study, but she has been there and reclaimed her cognitive functions and vitality.  
+                        Her mission is to make people aware of the risks and to guide them safely through the 
+                        steps necessary to make the living and working space safe while simultaneously 
+                        regenerating the body and mind after exposure to mold.  Join her and find out how 
+                        to make complex decisions that affect life itself. 
                     </p>
                 </div>
             </div>

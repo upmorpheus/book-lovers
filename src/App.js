@@ -13,7 +13,7 @@ import Footer from "./components/footer/Footer";
 const publicRouter = createBrowserRouter(createRoutesFromElements(
   [
     <Route path='/' element={<Home />} />,
-    <Route path='/login' element={<Login />}/>
+    <Route path='login' element={<Login />}/>
   ]
 ));
 
@@ -21,18 +21,19 @@ const privateRouter = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<Home />}>
             <Route path='start'>
-                <Route path='home' element={<Home />} />
+                
             </Route>
       </Route>
     ),
 );
 
 function App() {
-    const logged = useSelector((state) => state.app.data)
+    const logged = useSelector((state) => state.app.data);
+    
     return (
       <>
         <Header />
-        <RouterProvider router={!logged ? privateRouter : publicRouter} />
+        <RouterProvider router={logged ? privateRouter : publicRouter} />
         <Footer />
       </>
     );

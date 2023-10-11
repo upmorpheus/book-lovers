@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/logo.png";
+import Logo1 from "../../assets/logo1.png";
 import './Header.scss';
 
 const Header = () => {
@@ -7,6 +8,7 @@ const Header = () => {
       <div className="header">
         <div className="baner">
           <img className="logo" src={Logo} />
+          <img className="logo" src={Logo1} />
           <div className="auth">
             <a href="/login" className="">Login</a>
             <a>|</a>
@@ -15,10 +17,10 @@ const Header = () => {
         </div>
 
         <div className="menu">
-          <a href="/home">Home</a>
-          <a href="/books">Books</a>
-          <a href="/books">Management</a>
-          <a href="/users">Users</a>
+          <a href="/">HOME</a>
+          <a href="/books">BOOKS</a>
+          <a href="/books">MANAGEMENT</a>
+          <a href="/users">USERS</a>
         </div>
       </div>
     )
