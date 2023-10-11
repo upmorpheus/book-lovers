@@ -3,13 +3,15 @@
     flex-direction: column;
     background: url('../../assets/login.png');
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
+    background-attachment: fixed;
     padding-top: 180px;
     min-height: 900px;
+    z-index: 1;
 
     .card {
         display: flex;
-        margin: 40px;
+        margin: 80px;
         padding: 40px;
 
     }
