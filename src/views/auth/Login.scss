@@ -1,7 +1,16 @@
 .login {
     display: flex;
     flex-direction: column;
-    background: rgb(106, 106, 106);
-    padding-top: 120px;
-    min-height: 700px;
+    background: url('../../assets/login.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 180px;
+    min-height: 900px;
+
+    .card {
+        display: flex;
+        margin: 40px;
+        padding: 40px;
+
+    }
 }
