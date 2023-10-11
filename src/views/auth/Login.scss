@@ -1,9 +1,9 @@
 .login {
     display: flex;
     flex-direction: column;
-    background: url('../../assets/login.png');
+    background: url('../../assets/login-bg.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-attachment: fixed;
     padding-top: 180px;
     min-height: 900px;
@@ -38,8 +38,18 @@
                     align-items: center;
                     justify-content: center;
 
-                    .form {
-                        width: 100%;
+                    form {
+                        width: -webkit-fill-available;
+                        padding: 50px;
+                    }
+
+                    .form-control {
+                        display: unset;
+                    }
+
+                    .btn-line {
+                        display: flex;
+                        justify-content: space-around;
                     }
                 }
                 
