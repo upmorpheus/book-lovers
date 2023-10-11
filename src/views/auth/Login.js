@@ -14,7 +14,7 @@ const Login = () => {
                     <Image className="left-side" src={SideBarImg} rounded/>
                     <div className="right-side">
                         <h5>Hello!</h5>
-                        <h4 className="mb-4">Good morning</h4>
+                        <h4 className="mb-4 text-primary">Good morning</h4>
                         <div className="center-side">
                             <Card.Title>Login Your Account</Card.Title>
                             <Form>
