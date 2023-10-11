@@ -29,11 +29,11 @@ const Login = () => {
                             </Form>
                             <div className="btn-line">
                                 <Button className="mt-4 me-4" variant="primary">
-                                    <i className="bi-lock-fill me-2"></i>
+                                    <i className="bi-lock-fill me-2"/>
                                     Login
                                 </Button>
                                 <Button className="mt-4 ms-4" variant="success">
-                                    <i className="bi-person-fill-add me-2"></i>
+                                    <i className="bi-person-fill-add me-2"/>
                                     Register
                                 </Button>
                             </div>

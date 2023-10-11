@@ -10,17 +10,17 @@ const Header = () => {
           <img className="logo" src={Logo} />
           <img className="logo" src={Logo1} />
           <div className="auth">
-            <a href="/login" className="">Login</a>
+            <a href="/login" className=""><i className="bi-lock-fill me-2"/>Login</a>
             <a>|</a>
-            <a href="/register" className="">Register</a>
+            <a href="/register" className=""><i className="bi-person-fill-add me-2"/>Register</a>
           </div>
         </div>
 
         <div className="menu">
-          <a href="/">HOME</a>
-          <a href="/books">BOOKS</a>
-          <a href="/books">MANAGEMENT</a>
-          <a href="/users">USERS</a>
+          <a href="/"><i className="bi-bank2 me-2"/>HOME</a>
+          <a href="/books"><i className="bi-book-fill me-2"/>BOOKS</a>
+          <a href="/books"><i className="bi-gear me-2"/>MANAGEMENT</a>
+          <a href="/users"><i className="bi-people-fill me-2"/>USERS</a>
         </div>
       </div>
     )
