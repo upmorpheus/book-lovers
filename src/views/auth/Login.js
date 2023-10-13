@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
-import SideBarImg from "../../assets/login.png";
+import SideBarImg from "../../assets/login-1.png";
 import './Login.scss';
 
 const Login = () => {
@@ -38,7 +38,7 @@ const Login = () => {
                                 <Button
                                     className="mt-4 ms-4"
                                     variant="success"
-                                    onClick={() => navigate("register")}
+                                    onClick={() => navigate("/register")}
                                 >
                                     <i className="bi-person-fill-add me-2"/>
                                     Register
