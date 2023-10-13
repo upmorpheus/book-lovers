@@ -18,7 +18,7 @@ const Header = () => {
 
         <div className="menu">
           <a href="/"><i className="bi-bank2 me-2"/>HOME</a>
-          <a href="/books"><i className="bi-book-fill me-2"/>BOOKS</a>
+          <a href="/books"><i className="bi-book-fill me-2"/>E-BOOKS</a>
           <a href="/books"><i className="bi-gear me-2"/>MANAGEMENT</a>
           <a href="/users"><i className="bi-people-fill me-2"/>USERS</a>
         </div>
