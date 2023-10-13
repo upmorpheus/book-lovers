@@ -12,7 +12,7 @@ import Users from "./views/Users";
 import Register from "./views/auth/Register";
 import Login from "./views/auth/Login";
 import Header from "./components/header";
-import Footer from "./components/footer/Footer";
+import Footer from "./components/footer";
 
 const publicRouter = createBrowserRouter(createRoutesFromElements(
   [
