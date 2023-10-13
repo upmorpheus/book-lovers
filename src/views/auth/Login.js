@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
@@ -7,6 +8,8 @@ import SideBarImg from "../../assets/login.png";
 import './Login.scss';
 
 const Login = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="login">
             <Card>
@@ -32,7 +35,11 @@ const Login = () => {
                                     <i className="bi-lock-fill me-2"/>
                                     Login
                                 </Button>
-                                <Button className="mt-4 ms-4" variant="success">
+                                <Button
+                                    className="mt-4 ms-4"
+                                    variant="success"
+                                    onClick={() => navigate("register")}
+                                >
                                     <i className="bi-person-fill-add me-2"/>
                                     Register
                                 </Button>
