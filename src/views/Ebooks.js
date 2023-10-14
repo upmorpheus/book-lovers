@@ -9,6 +9,9 @@ import Member3 from "../assets/member3.png";
 const Members = [
     { name: "Ingrid Naiman", src: Member1, content: "I have developed a complete line of herbal products and essential oils to recover from mold exposure." },
     { name: "Hiroki Moto", src: Member2, content: "I am assuring the availability of digital materials needed to recover." },
+    { name: "Balaji Sampath", src: Member3, content: "I am administering the Locals.com community." },
+    { name: "Ingrid Naiman", src: Member1, content: "I have developed a complete line of herbal products and essential oils to recover from mold exposure." },
+    { name: "Hiroki Moto", src: Member2, content: "I am assuring the availability of digital materials needed to recover." },
     { name: "Balaji Sampath", src: Member3, content: "I am administering the Locals.com community." }
 ];
 
