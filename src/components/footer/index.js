@@ -7,14 +7,6 @@ const Footer = () => (
             <h2>Contact Me</h2>
             <div className="items">
                 <a>
-                    <i className="bi-envelope-open-fill me-2"></i>
-                    ahimsainternational@protonmail.com
-                </a>
-                <a>
-                    <i className="bi-telephone-fill me-2"></i>
-                    123 456 7890
-                </a>
-                <a>
                     <i className="bi-geo-alt-fill me-2"></i>
                     Poulsbo, Washington
                 </a>
