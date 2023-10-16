@@ -12,34 +12,42 @@ const Management = () => {
         <div className="management">
             <Card>
                 <Card.Body>
-                    <div className="right-side">
-                        <div className="center-side">
-                            <Card.Title>Add the E-Books</Card.Title>
-                            <Form>
-                                <Form.Group controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Book's name</Form.Label>
-                                    <Form.Control type="email" placeholder="name@example.com" />
-                                </Form.Group>
-                                <Form.Group controlId="exampleForm.ControlTextarea1">
-                                    <Form.Label className="mt-4">Password</Form.Label>
-                                    <Form.Control type="password" placeholder="Please input your password." />
-                                </Form.Group>
-                            </Form>
-                            <div className="btn-line">
-                                <Button className="mt-4 me-4" variant="primary">
-                                    <i className="bi-lock-fill me-2"/>
-                                    Cancel
-                                </Button>
-                                <Button
-                                    className="mt-4 ms-4"
-                                    variant="Succss"
-                                    onClick={() => navigate("/register")}
-                                >
-                                    <i className="bi-person-fill-add me-2"/>
-                                    Add
-                                </Button>
-                            </div>
-                        </div>
+                    <div className="form-page">
+                        <Form>
+                            <Form.Group className="mb-3" controlId="formGroupEmail">
+                                <Form.Label>Email address</Form.Label>
+                                <Form.Control type="email" placeholder="Enter email" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formGroupPassword">
+                                <Form.Label>Password</Form.Label>
+                                <Form.Control type="password" placeholder="Password" />
+                            </Form.Group>
+                        </Form>
+                        
+                        <Form>
+                            <Form.Group className="mb-3" controlId="formGroupEmail">
+                                <Form.Label>Email address</Form.Label>
+                                <Form.Control type="email" placeholder="Enter email" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formGroupPassword">
+                                <Form.Label>Password</Form.Label>
+                                <Form.Control type="password" placeholder="Password" />
+                            </Form.Group>
+                        </Form>
+                    </div>
+                    <div className="btn-line">
+                        <Button className="mt-4 me-4" variant="primary">
+                            <i className="bi-lock-fill me-2"/>
+                            Cancel
+                        </Button>
+                        <Button
+                            className="mt-4 ms-4"
+                            variant="Succss"
+                            onClick={() => navigate("/register")}
+                        >
+                            <i className="bi-person-fill-add me-2"/>
+                            Add
+                        </Button>
                     </div>
                 </Card.Body>
             </Card>
