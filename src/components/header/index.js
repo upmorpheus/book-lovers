@@ -1,4 +1,5 @@
 import React from "react";
+import Form from 'react-bootstrap/Form';
 import Logo from "../../assets/logo.png";
 import Logo1 from "../../assets/logo1.png";
 import './Header.scss';
@@ -17,10 +18,16 @@ const Header = () => {
         </div>
 
         <div className="menu">
-          <a href="/"><i className="bi-bank2 me-2"/>HOME</a>
-          <a href="/e-books"><i className="bi-book-fill me-2"/>E-BOOKS</a>
-          <a href="/management"><i className="bi-gear me-2"/>MANAGEMENT</a>
-          <a href="/users"><i className="bi-people-fill me-2"/>USERS</a>
+          <div className="menu-btn">
+            <a href="/"><i className="bi-bank2 me-2"/>HOME</a>
+            <a href="/e-books"><i className="bi-book-fill me-2"/>E-BOOKS</a>
+            <a href="/management"><i className="bi-gear me-2"/>MANAGEMENT</a>
+            <a href="/users"><i className="bi-people-fill me-2"/>USERS</a>
+          </div>
+          <div className="search">
+            SEARCH:
+            <Form.Control type="text" placeholder="" />
+          </div>
         </div>
       </div>
     )
