@@ -10,7 +10,7 @@ import PatterImg from "../../assets/4.png"
 import Book1 from "../../assets/book1.png";
 import Book2 from "../../assets/book2.png";
 import Book3 from "../../assets/book3.png";
-import IntroImg from "../../assets/dc2.png";
+import IntroImg from "../../assets/dc1.png";
 import Member1 from "../../assets/member1.png";
 import Member2 from "../../assets/member2.png";
 import Member3 from "../../assets/member3.png";
@@ -26,7 +26,7 @@ const Members = [
     { name: "Ingrid Naiman", src: Member1, content: "I have developed a complete line of herbal products and essential oils to recover from mold exposure." },
     { name: "Hiroki Moto", src: Member2, content: "I am assuring the availability of digital materials needed to recover." },
     { name: "Balaji Sampath", src: Member3, content: "I am administering the Locals.com community." }
-]
+];
 
 const Landing = () => {
     return (
